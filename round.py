@@ -1,5 +1,5 @@
 from surfer import SurferPool
-from points_estimator import OddsPointEstimator, ComboPointsEstimator
+from points_estimator import OddsPointEstimator, ComboPointsEstimator, ComboPointsEstimator2
 import random
 from random import shuffle
 
@@ -16,7 +16,7 @@ class RoundSettings:
 class Round:
     def __init__(self, settings: RoundSettings):
         self.settings = settings
-        self.estimator = ComboPointsEstimator()
+        self.estimator = ComboPointsEstimator2()
 
     def get_heat_names(self):
         heats = []
