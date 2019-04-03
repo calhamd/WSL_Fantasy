@@ -17,7 +17,7 @@ class csv_import:
                         rank = int(csv_surfer["Rank"])
                     else:
                         rank = -1
-                    surfers.append(surfer.Surfer(csv_surfer["Surfer"], float(csv_surfer["Odds"]), csv_surfer["Tier"], csv_surfer["Heat"], rank=rank))
+                    surfers.append(surfer.Surfer(csv_surfer["Surfer"], float(csv_surfer["Odds"]), csv_surfer["Tier"], "?", rank=rank))
             except Exception as e:
                 pass
         return surfer.SurferPool(surfers)

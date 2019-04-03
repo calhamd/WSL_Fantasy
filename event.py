@@ -6,10 +6,10 @@ import heat_mappings
 
 class Event:
     def __init__(self):
-        round1_set = RoundSettings("1", 12, 3, False, heat_mappings.round1_m)
-        round2_set = RoundSettings("2", 12, 2, True, heat_mappings.round2_m, heat_mappings.round2_s)
-        round3_set = RoundSettings("3", 12, 2, False, heat_mappings.round3_m, heat_mappings.round3_s)
-        round4_set = RoundSettings("4", 4, 3, False, heat_mappings.round4_m)
+        round1_set = RoundSettings("1", 12, 3, False, heat_mappings.round1_m, heat_mappings.round1_s)
+        round2_set = RoundSettings("2", 4, 3, True, heat_mappings.round2_m, heat_mappings.round2_s)
+        round3_set = RoundSettings("3", 16, 2, False, heat_mappings.round3_m, heat_mappings.round3_s)
+        round4_set = RoundSettings("4", 8, 2, False, heat_mappings.round4_m)
         roundQ_set = RoundSettings("Q", 4, 2, False, heat_mappings.roundQ_m)
         roundS_set = RoundSettings("S", 2, 2, False, heat_mappings.roundS_m)
         roundF_set = RoundSettings("F", 1, 2, False, heat_mappings.roundF_m)

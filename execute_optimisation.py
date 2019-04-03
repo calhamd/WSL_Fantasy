@@ -7,7 +7,7 @@ if __name__ == '__main__':
     surfer_pool = importer.generate_surfer_list()
     event = Event()
     print("Calculating Estimated Surfer Scores")
-    result_dict = event.calculate_average_points(surfer_pool, 10000)
+    result_dict = event.calculate_average_points(surfer_pool, 100)
 
     ASurfers = surfer_pool.get_surfers_in_tier("A")
     BSurfers = surfer_pool.get_surfers_in_tier("B")
