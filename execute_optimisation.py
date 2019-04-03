@@ -3,7 +3,7 @@ from event import Event
 import itertools
 
 if __name__ == '__main__':
-    importer = csv_import.csv_import("./ImportCSV/Round10-Pipe.csv")
+    importer = csv_import.csv_import("./ImportCSV/2019/Round1-Snapper.csv")
     surfer_pool = importer.generate_surfer_list()
     event = Event()
     print("Calculating Estimated Surfer Scores")
